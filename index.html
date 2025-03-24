@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>PLP Advanced HTML Assignment</title>
+        <meta name="author" content="Samuel Auma Wesa">
+        <meta name="description" content="This is the second html assignment courtesy of PLP submission by Samuel Wesa">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- Header section -->
+        <header>
+            <h1><u>ADVANCED HTML ASSIGNMENT TWO</u></h1><br>
+        </header>
+        
+        <!-- Main content section -->
+        <main>
+            <!-- List of fruits -->
+            <p>This is an example list of fruits I bought at the market today:</p>
+            <ol type="I">
+                <li>Mangoes</li>
+                <li>Grapes</li>
+                <li>Bananas</li>
+                <li>Watermelons</li>
+                <li>Guavas</li>
+            </ol>
+            
+            <!-- Image example -->
+            <p>Here is a pictorial example below</p><br>
+            <img src="https://images.pexels.com/photos/235294/pexels-photo-235294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="433" height="291" alt="a fruit basket full of fruits">
+            
+            <!-- Table of contacts -->
+            <p>To the market I was accompanied by:</p>
+            <table border="1">
+                <caption>Contact Info</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Horace</td>
+                        <td>Kisumu, Mamboleo, Kenya</td>
+                        <td>+254789345678</td>
+                        <td>horace36@gmail.org</td>
+                    </tr>
+                    <tr>
+                        <td>Shanice</td>
+                        <td>Bondo, Siaya, Kenya</td>
+                        <td>+254726364578</td>
+                        <td>shanice834@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Brian</td>
+                        <td>Mombasa, Mvita, Kenya</td>
+                        <td>+254738273645</td>
+                        <td>brianbonard033@proton.me</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="4">You can contact them if you want to hear about our little trip to the market :)</th>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <!-- Form for additional information -->
+            <form action="./forminput.txt" method="post"> <br>
+                <p>Hey, tell me a little more about yourself below:</p>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <!-- Full name input -->
+                    <label for="fullname">Your Name Please:</label> <br>
+                    <input type="text" name="fullname" id="fullname" placeholder="John/Jane Doe" required><br> <br>
+                    
+                    <!-- Gender selection -->
+                    <label for="gender">Gender:</label> <br>
+                    <input type="radio" name="gender" id="male" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female" required>
+                    <label for="female">Female</label> <br> <br>
+                    
+                    <!-- Email input -->
+                    <label for="email">Enter your email:</label> <br>
+                    <input type="email" name="email" id="email" placeholder="john/janedoe@gmail.org" required> <br> <br>
+                    
+                    <!-- Password input -->
+                    <label for="password">Password:</label> <br>
+                    <input type="password" name="password" id="password" required> <br> <br>
+                    
+                    <!-- Date input -->
+                    <label for="date">Please select the date of filling:</label>
+                    <input type="date" name="date" id="date" required> <br> <br>
+                    
+                    <!-- Coffee preference selection -->
+                    <label for="coffee">Which type of coffee do you like?</label>
+                    <select name="coffee" id="coffee">
+                        <option value="Esperranzo">Esperranzo</option>
+                        <option value="Capuccino">Capuccino</option>
+                        <option value="Black Natural">Black Natural</option>
+                        <option value="African">African</option>
+                    </select> <br> <br>
+                    
+                    <!-- Delivery method selection -->
+                    <label for="deliver_type">How would you like your responses to be delivered back to you? Check Below please</label> <br> <br>
+                    <input type="checkbox" name="deliver_type" id="physical_mail" value="physical_mail">
+                    <label for="physical_mail">Physical Mail</label> <br>
+                    <input type="checkbox" name="deliver_type" id="electronic_mail" value="electronic_mail">
+                    <label for="electronic_mail">Electronic Mail</label> <br>
+                    <input type="checkbox" name="deliver_type" id="sms" value="sms">
+                    <label for="sms">SMS</label> <br>
+                    <input type="checkbox" name="deliver_type" id="no_response" value="no_response">
+                    <label for="no_response">Do not return responses</label>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>
